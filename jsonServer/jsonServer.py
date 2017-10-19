@@ -162,8 +162,8 @@ class server(serverFunctions):
                 logging.debug("Loaded account " + usr)
 
         try:
-            print(auth)
-            print(accounts[user])
+            # print(auth)
+            # print(accounts[user])
             if auth != accounts[user]:
                 logging.info("Authentication failed.  Disconnecting user, password is incorrect")
                 self._send(0)   # Sends a 0, indicating a failed authentication

@@ -12,7 +12,10 @@ args["ip"] = "127.0.0.1"
 args["port"] = 4285
 args["user"] = username
 
+#message = input("What message would you like to send? ")
+message = "Hello World!"
+
 server = client.client(args)
-server.send({"message":"Hello World!"})
+server.send({"message":message})
 message = server.receive()
 print(message["message"])
